@@ -63,7 +63,18 @@
               для вашего бизнеса
             </h1>
             <!-- <div class="button-hero"> -->
-            <button type="button" class="btn">Заказать услугу</button>
+            <button data-modal-open type="button" class="btn">
+              Заказать услугу
+            </button>
+            <div class="backdrop is-hidden" data-modal>
+              <div class="modal">
+                <button class="modal-close-btn" type="button" data-modal-close>
+                  <svg class="icon-close" width="11" height="11">
+                    <use href="./images/sprait.svg#icon-close"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -125,15 +136,28 @@
       <section class="section-work">
         <div class="container">
           <h2 class="subject-h2">Чем мы занимаемся</h2>
+
           <ul class="list pictures">
             <li class="img">
-              <img src="./images/img1.jpg" alt="мониторы на столе" />
+              <div class="what-we-do">
+                <img src="./images/img1.jpg" alt="мониторы на столе" />
+                <p class="label">Десктопные приложения</p>
+              </div>
             </li>
             <li class="img">
-              <img src="./images/img2.jpg" alt="человек работает на ноутбуке" />
+              <div class="what-we-do">
+                <img
+                  src="./images/img2.jpg"
+                  alt="человек работает на ноутбуке"
+                />
+                <p class="label">Мобильные приложения</p>
+              </div>
             </li>
             <li class="img">
-              <img src="./images/img3.jpg" alt="подбор цвета на планшете" />
+              <div class="what-we-do">
+                <img src="./images/img3.jpg" alt="подбор цвета на планшете" />
+                <p class="label">Дизайнерские решения</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -431,5 +455,7 @@
         </div>
       </div>
     </footer>
+    <!-- скрипт -->
+    <script src="./js/modal.js"></script>
   </body>
 </html>
